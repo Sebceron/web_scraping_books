@@ -68,5 +68,14 @@ También se desarrolló un mini dashboard en **Streamlit** para explorar los dat
 streamlit run dashboard.py
 
 
+---
+
+## 🌐 Ver Dashboard Online
+
+🔗 [Haz clic aquí para abrir el dashboard en vivo](https://sebceron-web-scraping-books.streamlit.app)
+
+> Puedes interactuar con filtros, gráficas y explorar el dataset scrapeado directamente desde el navegador.
+
+
 - `Juan_Sebastan_Jimenez_Ceron`
 - `sebceron` 
