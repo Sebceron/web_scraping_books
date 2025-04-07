@@ -63,13 +63,28 @@ col1.metric("📦 Total de Libros", len(df))
 col2.metric("💷 Precio Promedio", f"{df['Precio'].mean():.2f} £")
 col3.metric("✅ Libros en Stock", df['En Stock'].sum())
 
-# Gráfico de distribución de precios
-st.markdown("### 💸 Distribución de Precios")
-fig, ax = plt.subplots(figsize=(10, 4))
-ax.hist(df['Precio'], bins=20, color='mediumslateblue', edgecolor='black')
-ax.set_xlabel("Precio (£)")
-ax.set_ylabel("Cantidad de libros")
-st.pyplot(fig)
+# Gráfico de distribución de precios con Plotly
+st.markdown("### 💸 Distribución Interactiva de Precios")
+
+fig = px.histogram(
+    df,
+    x='Precio',
+    nbins=20,
+    title='Distribución de precios de libros',
+    labels={'Precio': 'Precio (£)'},
+    color_discrete_sequence=['indigo']
+)
+
+fig.update_layout(
+    bargap=0.1,
+    template='plotly_white',
+    xaxis_title='Precio (£)',
+    yaxis_title='Cantidad de libros'
+)
+
+st.plotly_chart(fig, use_container_width=True)
+
+
 
 # Tabla de resultados
 st.markdown("### 📚 Tabla de libros filtrados")
