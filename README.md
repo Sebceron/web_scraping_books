@@ -28,6 +28,8 @@ web_scraping_books/
 ├── 1_scrape_pagina_unica.py 
 ├── 2_scrape_todas_las_paginas.py 
 ├── 3_scrape_detalles_categoria.py 
+├── libros_con_categoria.csv
+├── dashboard.py
 └── README.md
 
 ---
@@ -45,6 +47,25 @@ pip install requests beautifulsoup4 pandas
 
 3. Ejecuta el script completo:
 python 3_scrape_detalles_categoria.py
+
+
+
+## 🧩 Visualización Interactiva
+
+También se desarrolló un mini dashboard en **Streamlit** para explorar los datos de forma visual:
+
+### 🎛️ Funcionalidades del dashboard:
+- Filtro por categoría
+- Filtro por rango de precios
+- Filtro por disponibilidad (en stock / agotado)
+- Orden ascendente/descendente por precio
+- Visualización de histograma de precios
+- Tabla interactiva de libros filtrados
+
+### 🖥️ Cómo correrlo:
+
+```bash
+streamlit run dashboard.py
 
 
 - `Juan_Sebastan_Jimenez_Ceron`
