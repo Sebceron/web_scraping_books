@@ -72,7 +72,7 @@ streamlit run dashboard.py
 
 ## 🌐 Ver Dashboard Online
 
-🔗 [Haz clic aquí para abrir el dashboard en vivo](https://webscrapingbooks-nakq87m2tdbhjrgmqvt7sz.streamlit.app/)
+🔗 [Haz clic aquí para abrir el dashboard en vivo](https://projects-gfn7i7dxbxmrwrpnn6luqr.streamlit.app/)
 
 > Puedes interactuar con filtros, gráficas y explorar el dataset scrapeado directamente desde el navegador.
 
